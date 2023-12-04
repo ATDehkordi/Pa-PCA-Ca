@@ -135,8 +135,9 @@ geometries:true
 // ///////////////////////////////////////////////////////////////////////////
 
 
-//// *** Note: Users must first find the optimal hyperparameters of each RF, which are:
-//// * numberOfTrees, variablesPerSplit, and maxNodes.
+//// *** Note: Users must first find the optimal hyperparameters of each RF
+//// The hyperparameters are described in the paper. 
+/// RF can also be substitued with other ML models as mentioned in the paper.
 
 var RF1 = ee.Classifier.smileRandomForest().setOutputMode('MULTIPROBABILITY');
 var RF2 = ee.Classifier.smileRandomForest().setOutputMode('MULTIPROBABILITY');
@@ -265,8 +266,9 @@ geometries:true
 
 var com_1_bandnames = com_1.bandNames();
 
-//// *** Note: Users must first find the optimal hyperparameters of each RF, which are:
-//// * numberOfTrees, variablesPerSplit, and maxNodes.
+//// *** Note: Users must first find the optimal hyperparameters of each RF
+//// The hyperparameters are described in the paper. 
+/// RF can also be substitued with other ML models as mentioned in the paper.
 
 var Meta_model = ee.Classifier.smileRandomForest();
 var Meta_model = Meta_model.train(trainingSet_com_1, 'classvalue', com_1_bandnames);
