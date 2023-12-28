@@ -1,6 +1,6 @@
 # Pa-PCA-Ca
 
-## This is a JavaScript code in GEE for a novel ensemble structure for crop type classification using Remote Sensing satellite Data.
+## This is a JavaScript code in GEE for a novel ensemble structure for crop type classification using Remote Sensing satellite Data (Paper: https://doi.org/10.3390/rs16010127).
 
 This ensemble structure is published in this paper:
 
